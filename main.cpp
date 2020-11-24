@@ -40,14 +40,14 @@ void welcomeUser()
 }
 
 // Ask for and stores a roman numeral as a string
-void requestRomanNumeral(string& romanNumeral)
+void requestRomanNumeral(string &romanNumeral)
 {
 	cout << "Enter Roman Numeral Here: ";
 	cin >> romanNumeral;
 }
 
 // Converts each character in the romanNumeral string to uppercase
-void convertRomanToUpper(string& romanNumeral)
+void convertRomanToUpper(string &romanNumeral)
 {
 	for (unsigned int i = 0; i < romanNumeral.size(); i++)
 		{
@@ -61,7 +61,7 @@ void convertRomanToUpper(string& romanNumeral)
 int convertRomanToArabic(string& romanNumeral)
 {
 	// runningTotal will be the sum of each roman numeral's equivalent arabic numeral
-	int runningTotal {0};
+	int runningTotal = 0;
 
 	for (unsigned int i = 0; i < romanNumeral.size(); i++)
 	{
